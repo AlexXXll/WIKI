@@ -1,0 +1,98 @@
+{% load cms_tags menu_tags sekizai_tags %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+{% load static %}
+    <link rel="stylesheet" href="{% static "css/main.css" %}" />
+    <img src="{%static 'image/bg.png' %}" alt="BG" class="firstHeading">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            .nav {
+                padding-left: 0;
+            }
+            .nav li {
+                display: inline;
+                list-style-type: none;
+                padding-right: 20px;
+            }
+            .container {
+                width: 940px;
+                margin: 0 auto
+            }
+            .content {
+                float: left;
+                width: 80%;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+            }
+        </style>
+        {% render_block "css" %}
+    {% load i18n menu_tags %}
+
+{% for language in languages %}
+<li{% if current_language == language.0 %} class="active"{% endif %}>
+    <a href="{% page_language_url language.0 %}" title="{% trans 'Change language to' %} {{ language.1 }}">{{ language.0|upper }}</a>
+</li>
+{% endfor %}
+    </head>
+    <body class="body1">
+        {% cms_toolbar %}
+        <div class="body">
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-black border-bottom shadow-sm">
+                <h5 class="my-0 mr-md-auto font-weight-normal text-white">MagickScrolls</h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+
+                </nav>
+            </div>
+            {% block content %}{% endblock content %}
+            <!-- Navigation -->
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-4">
+                        <a> Scrolls </a>
+                        {% show_menu_below_id "Scrolls" %}
+                    </div>
+                    <div class="col-sm-4">
+                        <a> Artifacts </a>
+                        {% show_menu_below_id "Artifact" %}
+                    </div>
+                    <div class="col-sm-4">
+                        <a> Rituals </a>
+                        {% show_menu_below_id "Rituals" %}
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-4">
+                        <a> Reserches </a>
+                        {% show_menu_below_id "Reserches" %}
+                    </div>
+                    <div class="col-sm-4">
+                        <a> Technic zone </a>
+                        {% show_menu_below_id "Technic zone" %}
+                    </div>
+                    <div class="col-sm-4">
+                        <a> Config parameters </a>
+                        {% show_menu_below_id "Config parameters" %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="navbar-fixed-bottom ">
+                <h5 class="my-0 mr-md-auto text-light font-weight-normal">&copy; <?php echo date('Y'); ?> MagickScrolls</h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+            </div>
+            {% render_block "js" %}
+        </div>
+    </body>
+</html>
