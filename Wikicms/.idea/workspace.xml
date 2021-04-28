@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="145f353a-ee8a-4093-ae30-879bf2045c63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/project.db" beforeDir="false" afterPath="$PROJECT_DIR$/project.db" afterDir="false" />
-    </list>
+    <list default="true" id="145f353a-ee8a-4093-ae30-879bf2045c63" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Viki" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -96,6 +94,7 @@
       <workItem from="1609354956420" duration="3005000" />
       <workItem from="1609363777350" duration="12766000" />
       <workItem from="1610802878024" duration="3832000" />
+      <workItem from="1614628179612" duration="72000" />
     </task>
     <servers />
   </component>
@@ -115,10 +114,14 @@
       <screen x="0" y="0" width="1360" height="738" />
     </state>
     <state x="409" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.738@0.0.1360.738" timestamp="1609373472485" />
-    <state x="180" y="13" key="SettingsEditor" timestamp="1609373820757">
+    <state x="459" y="123" key="FileChooserDialogImpl" timestamp="1614628251347">
       <screen x="0" y="0" width="1360" height="738" />
     </state>
-    <state x="180" y="13" key="SettingsEditor/0.0.1360.738@0.0.1360.738" timestamp="1609373820757" />
+    <state x="459" y="123" key="FileChooserDialogImpl/0.0.1360.738@0.0.1360.738" timestamp="1614628251347" />
+    <state x="180" y="13" key="SettingsEditor" timestamp="1614628224454">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="180" y="13" key="SettingsEditor/0.0.1360.738@0.0.1360.738" timestamp="1614628224454" />
     <state x="289" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1609374988895">
       <screen x="0" y="0" width="1360" height="738" />
     </state>
